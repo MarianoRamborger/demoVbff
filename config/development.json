@@ -1,6 +1,13 @@
 {
     "server": {
         "port": 8080,
-        "test": "Up in development."
+        "test": "Up in development.",
+        "origins_allowed": ["http://localhost:3000","http://localhost:3000/"]    
+    },
+
+    "apis": {
+      "openMeteo": "https://api.open-meteo.com/v1"
     }
+
+  
 }
