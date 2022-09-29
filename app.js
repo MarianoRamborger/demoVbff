@@ -7,17 +7,12 @@ const envs = require("./config/envs");
 const cors = require("cors");
 const app = express();
 
-//TODO: strongly type the envs object?
 
 let corsOptions = {
   origin: envs.server.origins_allowed
 }
 
-
 const port = process.env.PORT || '8080'; 
-
-
-
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
